@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Color Click Game</title>
+  <link rel="stylesheet" href="color-style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎯 Color Click Challenge</h1>
+
+    <div class="info">
+      <p><strong>Score:</strong> <span id="score">0</span></p>
+      <p><strong>High Score:</strong> <span id="highScore">0</span></p>
+      <p><strong>Lives:</strong> <span id="lives">3</span></p>
+      <p><strong>Time Left:</strong> <span id="timeLeft">10</span>s</p>
+    </div>
+
+    <div id="countdown" class="countdown hidden">Starting...</div>
+    <div id="message" class="message"></div>
+
+    <div id="gameBoard" class="game-board"></div>
+
+    <button id="startButton">Start Game</button>
+    <button id="restartButton" style="display: none;">Restart</button>
+    <button id="stopButton" style="display: none;">Stop Game</button>
+
+    <h2>🏆 Leaderboard</h2>
+    <ol id="leaderboardList"></ol>
+  </div>
+
+  <script src="script-color.js"></script>
+</body>
+</html>

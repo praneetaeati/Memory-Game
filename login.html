@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login - Game Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="center-box">
+    <h1>🎮 Welcome to Game Portal</h1>
+    <input type="text" id="username" placeholder="Enter your name" />
+    <button onclick="login()">Enter</button>
+  </div>
+
+  <script>
+    function login() {
+      const name = document.getElementById('username').value.trim();
+      if (name) {
+        localStorage.setItem("playerName", name);
+        window.location.href = "home.html";
+      }
+    }
+  </script>
+</body>
+</html>

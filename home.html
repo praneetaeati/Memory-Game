@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Choose Your Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="center-box">
+    <h2>👋 Hello, <span id="playerName"></span></h2>
+    <h1>Select a Game</h1>
+    <button onclick="location.href='color.html'">🎨 Color Click Challenge</button>
+    <button onclick="location.href='memory.html'">🧠 Memory Match Game</button>
+     <button onclick="location.href='simon.html'">🧠 simon Game</button>
+  </div>
+
+  <script>
+    document.getElementById('playerName').innerText = localStorage.getItem('playerName') || "Player";
+  </script>
+</body>
+</html>

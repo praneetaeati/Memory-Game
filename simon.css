@@ -1,0 +1,91 @@
+body {
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 1rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+h1 {
+  margin-top: 1rem;
+  font-size: 2.5rem;
+}
+
+h2 {
+  margin-bottom: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.settings, .controls {
+  margin-bottom: 1rem;
+}
+
+input, select, button {
+  margin: 0.4rem;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #999;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.line-one, .line-two {
+  display: flex;
+}
+
+.btn {
+  height: 160px;
+  width: 160px;
+  border-radius: 15%;
+  border: 5px solid black;
+  margin: 1rem;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.btn:active {
+  transform: scale(1.05);
+}
+
+.red    { background-color: #d95980; }
+.yellow { background-color: #f99b45; }
+.green  { background-color: #63aac0; }
+.purple { background-color: #819ff9; }
+
+.flash {
+  background-color: white !important;
+}
+
+.userflash {
+  background-color: lightgreen !important;
+}
+
+.progress-bar {
+  height: 5px;
+  width: 0%;
+  background: #00c853;
+  transition: width 5s linear;
+  margin-bottom: 1rem;
+}
+
+.footer {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #666;
+}
